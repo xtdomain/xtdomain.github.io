@@ -1,15 +1,14 @@
-# Work ¹1  
-  
-  
-* ### Add DataBase  
+# Work 1 
+
+* ### Add DataBase 
 
 ![](screen1.png)
-![](screen2.png)  
+![](screen2.png) 
 
-* ### Bootstrap  
+* ### Bootstrap 
 
-![](screen3.png)  
+![](screen3.png) 
 
-* ### Changes in Gii  
+* ### Changes in Gii 
 
 ![](screen4.png)
