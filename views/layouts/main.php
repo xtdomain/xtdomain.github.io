@@ -33,7 +33,8 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
-        ],
+            'style' => 'background-color: #000033; border: 0px',
+              ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],

@@ -7,6 +7,13 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'post/index',
+     'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'defaultRoute' => 'post/index',
+        ],
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -14,7 +21,8 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => 'MUJTC1GQPSktvGGtU6ERPZNd3TRPPCpz',
+            'baseUrl' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -43,14 +51,17 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                  'post/<id:\d+>' => 'post/view',
+                'page/<page:\d+>' => 'post/index',
+                '/' => 'post/index',
             ],
         ],
-        */
+       
     ],
     'params' => $params,
 ];
